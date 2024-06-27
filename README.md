@@ -29,7 +29,7 @@ Simple Employee Database Management System that allows adding new employees and 
 
 2. **Note your gmail email id and password from which you want to send the public holidays email**
 
-3. 3**Set Environment Variables**
+3. **Set Environment Variables**
    ```sh
    export API_KEY="your_abstract_api_key"
    export EMAIL_USERNAME="your_email@gmail.com"
