@@ -27,14 +27,15 @@ Simple Employee Database Management System that allows adding new employees and 
 1. **Get Your API Key**
    - Create an API key from [Abstract API Holidays API](https://www.abstractapi.com/api/holidays-api).
 
-2. **Note your email id and password from which you want to send the public holidays email**
+2. **Note your gmail email id and password from which you want to send the public holidays email**
 
 3. 3**Set Environment Variables**
    ```sh
    export API_KEY="your_abstract_api_key"
-   export EMAIL_USERNAME="your_email@example.com"
+   export EMAIL_USERNAME="your_email@gmail.com"
    export EMAIL_PASSWORD="your_email_password"
-Replace "your_abstract_api_key", "your_email@example.com", and "your_email_password" with your actual credentials.
+   
+Replace with your actual credentials.
 
 
 To run the FastAPI application, use the following command:
