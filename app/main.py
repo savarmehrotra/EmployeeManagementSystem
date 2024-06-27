@@ -6,6 +6,7 @@ from uuid import UUID
 from app.database.employee_db import EmployeeDatabase
 from app.exceptions.employee_exceptions import EmployeeNotFoundException, InvalidEmailFormatException
 from app.models.employee_models import Employee, CreateEmployeeRequest, UpdateEmployeeRequest
+from app.service.public_holiday_notification_service import email_public_holidays_for_upcoming_month
 from app.utils.email_validators import validate_email_format
 from app.utils.time_utils import transform_to_local_time
 
@@ -121,4 +122,8 @@ def get_all_employees() -> List[Employee]:
 
 @app.get("/email_public_holidays")
 def trigger_email_public_holidays():
+    """
+      Triggers the process to send emails for upcoming public holidays.
+    """
+    email_public_holidays_for_upcoming_month()
     return {"message": "Emails for upcoming public holidays will be sent shortly."}
