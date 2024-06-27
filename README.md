@@ -1,6 +1,6 @@
 # Employee Management System
 
-Simple Employee Database Management System that allows adding new employees and retrieving information about existing employees.
+Simple Employee Database Management System that allows adding new employees and retrieving information about existing employees. Also, provides an option to send an email notification for the upcoming public holidays next month.
 
 
 ## Setup Instructions
