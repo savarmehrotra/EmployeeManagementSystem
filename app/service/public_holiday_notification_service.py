@@ -39,7 +39,7 @@ def send_email(subject: str, body: str, to_email: str) -> None:
 
     message.attach(MIMEText(body, "plain"))
 
-    with smtplib.SMTP("smtp.example.com", 587) as server:
+    with smtplib.SMTP("smtp.gmail.com", 587) as server:
         server.starttls()
         server.login(from_email, password)
         server.sendmail(from_email, to_email, message.as_string())
