@@ -117,3 +117,8 @@ def get_all_employees() -> List[Employee]:
         return employees
     except EmployeeNotFoundException as e:
         raise HTTPException(status_code=404, detail=str(e))
+
+
+@app.get("/email_public_holidays")
+def trigger_email_public_holidays():
+    return {"message": "Emails for upcoming public holidays will be sent shortly."}
